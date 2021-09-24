@@ -1,0 +1,178 @@
+header {
+    position: relative;
+    background: url(../images/abougbg.png) no-repeat center center;
+    background-size: cover;
+    color: #Fff;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020233;
+    opacity: 0.7;
+    z-index: 8;
+}
+
+header .header-top {
+    position: relative;
+    z-index: 10;
+}
+
+header .header-top nav>ul>li>a {
+    color: #fff;
+}
+
+.baaner {
+    padding: 200px 0;
+    text-align: center;
+}
+
+.baaner h2 {
+    position: relative;
+    z-index: 10;
+    font-size: 72px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.baaner a {
+    position: relative;
+    z-index: 10;
+    color: #Fff;
+    font-size: 18px;
+}
+
+
+/* our部分 */
+
+.our {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    min-height: 700px;
+    padding-bottom: 50px;
+}
+
+.our .tab {
+    margin-bottom: 40px;
+}
+
+.our .tab li {
+    display: inline-block;
+}
+
+.our .tab li+li {
+    margin-left: 30px;
+}
+
+.our .tab li button {
+    color: #02024d;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.tab-item {
+    max-height: 780px;
+}
+
+.tab-item .row>div .show {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.tab-item img {
+    width: 100%;
+}
+
+.tab-item .row>div:nth-child(3) {
+    float: right;
+}
+
+.tab-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none;
+    background-image: linear-gradient(to bottom left, rgba(153, 69, 205, .8), rgba(210, 71, 213, .8));
+}
+
+.tab-shadow a {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    z-index: 999;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.tab-shadow a i {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+}
+
+.show:hover .tab-shadow {
+    display: block;
+    opacity: 1;
+}
+
+.tab-shadow a:hover {
+    background: #fff;
+    border-radius: 50%;
+    color: #f00;
+    z-index: 999;
+}
+
+.tab-shadow a:hover i {
+    color: #f00;
+}
+
+.tab-shadow:hover a {
+    opacity: 1;
+    top: 24px;
+}
+
+.tab-shadow .item-bottom-infor {
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    opacity: 0;
+    color: #fff;
+    text-align: left;
+    transition: all .5s;
+}
+
+.tab-shadow h3 {
+    margin-top: 10px;
+}
+
+.tab-shadow:hover .item-bottom-infor {
+    opacity: 1;
+    bottom: 24px;
+}
+
+.tab-item-content {
+    display: none;
+}
+
+.show-active {
+    display: block;
+}

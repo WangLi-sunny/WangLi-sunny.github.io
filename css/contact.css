@@ -1,0 +1,54 @@
+.wating {
+    padding: 100px 0;
+}
+
+.wating .container {
+    background-color: #f1f0f0;
+    padding: 100px 100px;
+}
+
+.wating-left h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    font-family: "Playfair Display", serif;
+}
+
+.gps li+li {
+    margin-top: 30px;
+}
+
+.gps i {
+    display: block;
+    float: left;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ea4c89;
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+.gps-right {
+    overflow: hidden;
+}
+
+.gps-right p {
+    color: #51515d;
+    font-size: 16px;
+}
+
+.wating-right input,
+.wating-right textarea {
+    width: 433px;
+    line-height: 50px;
+    background-color: #ffffff;
+    text-indent: 15px;
+    color: #b0a5b0;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.red::before {
+    background-color: #e84545
+}
